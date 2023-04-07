@@ -1,0 +1,213 @@
+/**
+  |============================
+  | COMMON STYLES
+  |============================
+*/
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--color-slate);
+
+  background-color: var(--color-white);
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--color-navy-blue);
+}
+
+.list {
+  list-style: none;
+}
+/* LOGO */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-iris);
+}
+
+.logo-head {
+  color: var(--color-navy-blue);
+}
+
+.logo-foot {
+  color: var(--color-cloud);
+}
+
+/* Body text */
+
+.body-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+}
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+
+/* Navigation */
+
+/* .nav .link {
+   
+} */
+
+.address {
+  font-style: normal;
+}
+
+.adr.link {
+  font-weight: 400;
+  color: var(--color-slate);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-ocean);
+}
+
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
+.footer {
+  background-color: var(--color-navy-blue);
+}
+.text-foot {
+  color: var(--color-cloud);
+}
+
+/**
+  |============================
+  | STUDIO STYLES
+  |============================
+*/
+
+/* Hero Section */
+
+.hero-section {
+  background-color: var(--color-navy-blue);
+}
+
+/* H1 Title */
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+
+  background-color: var(--color-iris);
+
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active {
+  background-color: var(--color-ocean);
+}
+
+/* H2 Titles */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-navy-blue);
+}
+
+/* H3 Titles */
+
+.li-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+}
+
+.our-team {
+  background-color: var(--color-cloud);
+}
+
+.team-card {
+  background-color: var(--color-white);
+}
+
+/**
+  |============================
+  | PORTFOLIO STYLES
+  |============================
+*/
+
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-iris);
+
+  background-color: var(--color-cloud);
+
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn:active {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+}
