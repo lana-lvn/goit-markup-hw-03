@@ -24,6 +24,8 @@
   background-color: var(--color-white);
 }
 
+/* Reset */
+
 .link {
   text-decoration: none;
   font-weight: 500;
@@ -36,7 +38,24 @@
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 /* LOGO */
 
 .logo {
@@ -48,6 +67,8 @@
   text-transform: uppercase;
 
   color: var(--color-iris);
+
+  margin-right: 76px;
 }
 
 .logo-head {
@@ -68,9 +89,16 @@
   color: var(--color-slate);
 }
 
+/* CONTAINER */
+
 .container {
-  display: flex;
-  align-items: center;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid tomato;
 }
 
 /**
@@ -80,18 +108,42 @@
 */
 
 /* Navigation */
+.header {
+  border-bottom: 1px solid var(--color-cornflower);
+}
 
-/* .nav .link {
-   
-} */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation,
+.address {
+  display: flex;
+  align-items: center;
+}
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.menu-nav,
+.adr {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .adr.link {
   font-weight: 400;
   color: var(--color-slate);
+}
+
+nav.link,
+.adr.link {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav.link:hover,
@@ -125,8 +177,6 @@
   background-color: var(--color-navy-blue);
 }
 
-/* H1 Title */
-
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -155,7 +205,7 @@
   background-color: var(--color-ocean);
 }
 
-/* H2 Titles */
+/* Sections' titles */
 
 .section-title {
   font-weight: 700;
@@ -167,7 +217,7 @@
   color: var(--color-navy-blue);
 }
 
-/* H3 Titles */
+/* Our team */
 
 .li-title {
   font-weight: 500;
@@ -210,6 +260,8 @@
   color: var(--color-white);
   background-color: var(--color-ocean);
 }
+
+/* CARD SET */
 
 .card-title {
   font-weight: 500;
