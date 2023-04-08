@@ -175,9 +175,16 @@ nav.link,
 
 .hero-section {
   background-color: var(--color-navy-blue);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -187,6 +194,7 @@ nav.link,
 }
 
 .hero-btn {
+  display: block;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -197,6 +205,15 @@ nav.link,
   background-color: var(--color-iris);
 
   cursor: pointer;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+
+  min-width: 168px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px transparent;
 }
 
 .hero-btn:hover,
@@ -216,6 +233,23 @@ nav.link,
   text-transform: capitalize;
   color: var(--color-navy-blue);
 }
+/* Section 1 - Features */
+
+.features-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -24px;
+}
+
+.features-item {
+  flex-basis: calc(100% / 4 - 24px);
+  margin-left: 24px;
+}
 
 /* Our team */
 
@@ -225,6 +259,8 @@ nav.link,
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+
+  margin-bottom: 8px;
 }
 
 .our-team {
