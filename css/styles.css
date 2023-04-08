@@ -68,6 +68,11 @@
   color: var(--color-slate);
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+
 /**
   |============================
   | HEADER
@@ -89,8 +94,10 @@
   color: var(--color-slate);
 }
 
-.link:hover,
-.link:focus {
+.nav.link:hover,
+.nav.link:focus,
+.adr.link:hover,
+.adr.link:focus {
   color: var(--color-ocean);
 }
 
