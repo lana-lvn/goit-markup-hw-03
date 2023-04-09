@@ -84,7 +84,6 @@ img {
   color: var(--color-iris);
 
   display: inline-block;
-  padding-top: 100px;
   margin-bottom: 16px;
 }
 
@@ -114,6 +113,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  outline: 1px solid tomato;
 }
 
 /**
@@ -155,7 +156,7 @@ img {
   color: var(--color-slate);
 }
 
-nav.link,
+.nav.link,
 .adr.link {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -175,6 +176,7 @@ nav.link,
 */
 .footer {
   background-color: var(--color-navy-blue);
+  padding: 100px 0;
 }
 .text-foot {
   font-weight: 400;
@@ -185,7 +187,6 @@ nav.link,
   color: var(--color-cloud);
 
   width: 264px;
-  padding-bottom: 100px;
 }
 
 /**
@@ -203,7 +204,7 @@ nav.link,
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -233,7 +234,7 @@ nav.link,
   margin-right: auto;
   padding: 16px 32px;
 
-  min-width: 168px;
+  min-width: 169px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px transparent;
@@ -268,19 +269,22 @@ nav.link,
 .features {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -24px;
+  gap: 24px;
 }
 
 .features-item {
-  flex-basis: calc(100% / 4 - 24px);
-  margin-left: 24px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 /* Section 2 - What are we doing */
 
 .examples {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
+}
+
+.examples-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .examples-section {
@@ -309,27 +313,19 @@ nav.link,
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: -24px;
-  margin-left: -24px;
+  gap: 24px;
 }
 
 .team-card {
   background-color: var(--color-white);
-
-  flex-basis: calc(100% / 4 - 24px);
-
-  margin-top: 24px;
-  margin-left: 24px;
-
-  /* padding-bottom: 32px; */
-
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .card-content {
   padding: 32px 16px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .member-name {
